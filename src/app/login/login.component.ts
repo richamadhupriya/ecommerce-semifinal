@@ -11,6 +11,7 @@ import { AppComponent} from '../app.component'
 export class LoginComponent implements OnInit {
   userName:string;
   password:string;
+  errorMessage:string ="The username and passowrd are incorrect";
   //router:Router;
   //loggerDemo = new AppComponent();
   USER = {'username':'admin','password':'admin'}
@@ -25,6 +26,7 @@ export class LoginComponent implements OnInit {
       this.userService.setUserLoggedIn(user);
       this.router.navigate(['home']);
     }
+   
   }
   ngOnInit() {
     console.log(this.userService.username)

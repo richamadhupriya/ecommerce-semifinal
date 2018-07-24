@@ -9,6 +9,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { LoginComponent } from "./login/login.component";
 import {AuthGuard} from "./auth.guard"
 import { PreventLoginGuard } from "./prevent-login.guard";
+import {InvoiceComponent} from "./invoice/invoice.component"
 
 export const router: Routes = [
 	{ path: "", redirectTo: "home", pathMatch: "full" },
@@ -17,6 +18,7 @@ export const router: Routes = [
 	{ path: "home", component: HomeComponent },
 	{path:"login", component:LoginComponent, canActivate:[PreventLoginGuard]},
 	{ path: "cart", component: CartComponent, canActivate:[AuthGuard] },
+	{path:"invoice", component:InvoiceComponent},
 	{ path: "sidebar-component", component: SidebarComponent }
 	
 ];
