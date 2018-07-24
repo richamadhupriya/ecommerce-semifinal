@@ -1,0 +1,23 @@
+.custom-sidebar {
+  padding: 10px;
+  background-color: #DCDCDC;
+  margin-right: 20px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.add-component-container input {
+  width: 100%;
+  margin: 10px;
+}
+
+.add-component-container div {
+  margin-top: 10px;
+}
+.custom-sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}

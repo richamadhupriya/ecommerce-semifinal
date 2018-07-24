@@ -1,0 +1,29 @@
+
+<div class="container col-md-6" style="float: none">
+  <div class="panel panel-primary">
+    <div class="header">
+      <span style="color:#ffffff"> LOG IN </span>
+    </div><br><br><br>
+    <div class="panel-body">
+      <form (submit)="validateUser($event)">
+        <div class="table-responsive">
+          <table class="table table-hover">
+            <tr>
+              <td><label for="userName">User Name</label></td>
+              <td> <input type="text" class="form-control" id="txtUserName"placeholder="Please enter username" required/></td>
+            </tr>
+            <tr>
+              <td> <label for="Password">Password</label></td>
+              <td><input type="password" class="form-control" id="inputPassword" placeholder="Please enter password" required></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                  <input type="submit" class="btn btn-primary"/>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
