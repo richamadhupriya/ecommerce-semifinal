@@ -19,7 +19,8 @@ export const router: Routes = [
 	{path:"login", component:LoginComponent, canActivate:[PreventLoginGuard]},
 	{ path: "cart", component: CartComponent, canActivate:[AuthGuard] },
 	{path:"invoice", component:InvoiceComponent},
-	{ path: "sidebar-component", component: SidebarComponent }
+	{ path: "sidebar-component", component: SidebarComponent },
+	{ path: 'logout', component:LoginComponent}
 	
 ];
 

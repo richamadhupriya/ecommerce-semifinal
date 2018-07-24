@@ -20,4 +20,9 @@ export class UserService {
   	return this.isUserLoggedIn;
   }
 
+  logOut() {
+    this.username = undefined
+    this.isUserLoggedIn = false
+  }
+
 }

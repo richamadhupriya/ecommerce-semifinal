@@ -28,6 +28,11 @@ export class LoginComponent implements OnInit {
     }
    
   }
+
+  logOut() {
+    this.userService.logOut()
+    this.router.navigate(['home']);
+  }
   ngOnInit() {
     console.log(this.userService.username)
   }
